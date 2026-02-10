@@ -48,3 +48,48 @@ This project demonstrates how to build a **full realtime chat system** using Soc
 
 ## 📂 Project Structure
 
+## 📂 Project Structure
+
+chat-app/
+│
+├── client/                     # React frontend
+│   ├── public/                # Static files
+│   │   └── index.html
+│   │
+│   ├── src/
+│   │   ├── components/        # Reusable UI components
+│   │   │   └── ChatRoom.tsx
+│   │   │
+│   │   ├── App.tsx            # Main app component
+│   │   ├── main.tsx           # React entry point
+│   │   └── index.css          # Global styles
+│   │
+│   ├── package.json
+│   └── tsconfig.json
+│
+├── server/                     # Node.js + Socket.io backend
+│   ├── index.js               # Server entry point
+│   ├── package.json
+│   └── node_modules/
+│
+├── .gitignore
+├── README.md
+└── package.json               # (optional root config)
+```
+
+### 📁 Folder Explanation
+
+| Folder/File      | Description                                              |
+| ---------------- | -------------------------------------------------------- |
+| **client/**      | React frontend application                               |
+| **server/**      | Node.js + Socket.io backend                              |
+| **components/**  | Reusable UI components (chat room, message bubble, etc.) |
+| **ChatRoom.tsx** | Main chat interface                                      |
+| **index.js**     | Socket.io server setup                                   |
+| **README.md**    | Project documentation                                    |
+
+### 🧩 Architecture Overview
+
+* **Frontend:** React + TypeScript + Tailwind CSS
+* **Backend:** Node.js + Express + Socket.io
+* **Communication:** Real-time WebSocket connection
